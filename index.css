@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #fff5f8;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+    background: linear-gradient(135deg, #ff85a2, #ffb6c9);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.header h1 {
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+}
+
+.contacto {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.logo img {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #fff;
+    max-width: 100%;
+    height: auto;
+}
+
+#descipccion {
+    margin-top: 15px;
+    background: rgba(255, 255, 255, 0.25);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* NAV */
+.nav {
+    background: #d63a6a;
+    padding: 15px;
+    text-align: center;
+}
+
+.nav h2 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.lista {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.lista a {
+    display: block;
+    padding: 8px 20px;
+    background: #fff;
+    color: #d63a6a;
+    text-decoration: none;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.lista a:hover {
+    background: #ffd6e3;
+    transform: translateY(-3px);
+}
+
+/* MAIN */
+.main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 15px;
+}
+
+.presentacion {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+/* TABLA DE ENVIOS */
+.div-envios {
+    overflow-x: auto;
+    margin-bottom: 30px;
+}
+
+.tab-envios {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tab-envios h2 {
+    text-align: center;
+    padding: 10px;
+}
+
+.tab-envios td {
+    border: 1px solid #f3c1d1;
+    padding: 10px;
+    text-align: center;
+}
+
+.tab-envios thead td {
+    background: #ff85a2;
+    color: #fff;
+    font-weight: bold;
+}
+
+.tab-envios tbody tr:nth-child(even) {
+    background: #fff0f5;
+}
+
+/* HORARIOS */
+.as-horario {
+    background: #fff;
+    border-left: 6px solid #d63a6a;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.as-horario h2 {
+    color: #d63a6a;
+    margin-bottom: 10px;
+}
+
+.ul-horario {
+    list-style: none;
+}
+
+.ul-horario li {
+    padding: 6px 0;
+    border-bottom: 1px dashed #f3c1d1;
+}
+
+/* FOOTER */
+.foot-redes {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 25px 15px;
+    margin-top: 30px;
+}
+
+.foot-redes h3 {
+    margin-bottom: 10px;
+}
+
+.div-redes ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.div-redes img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.foot-redes div {
+    margin-bottom: 15px;
+}
+
+.foot-redes a {
+    color: #ffb6c9;
+}
+
+.foot-redes p:last-child {
+    font-size: 0.85rem;
+    opacity: 0.8;
+}
+
+/* ACCESORIOS */
+.descipccion {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.main section {
+    margin-bottom: 30px;
+}
+
+.main section h3 {
+    color: #d63a6a;
+    margin-bottom: 10px;
+}
+
+.main article {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main figure {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.main figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.main figcaption {
+    font-size: 0.9rem;
+    color: #777;
+}
+
+button {
+    background: #d63a6a;
+    color: #fff;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff85a2;
+}
+
+.as-metodo-pago ul {
+    list-style: none;
+}
