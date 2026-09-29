@@ -81,7 +81,7 @@ body {
   z-index: 100;
 }
 
-.dropdown:hover .dropdown-menu { display: block; }
+.dropdown:focus-within .dropdown-menu { display: block; }
 
 .dropdown-menu a {
   display: block;
@@ -335,3 +335,13 @@ button:hover {
   white-space: nowrap;
 }
 .banner-btn:hover { background: #BDB947; color: #1E1E1E; }
+
+@media (max-width: 768px) {
+  .banner-promo {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  .banner-descuento { font-size: 3rem; }
+  .banner-marca { font-size: 1.8rem; }
+}
