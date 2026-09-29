@@ -11,7 +11,6 @@ body {
     line-height: 1.6;
 }
 
-/* HEADER */
 .header {
     background: linear-gradient(135deg, #ff85a2, #ffb6c9);
     color: #fff;
@@ -44,10 +43,9 @@ body {
     border-radius: 8px;
 }
 
-/* NAV */
 .nav {
-    background: #d63a6a;
-    padding: 15px;
+    background: #da4874;
+    padding: 12px;
     text-align: center;
 }
 
@@ -59,7 +57,7 @@ body {
 .dropdown-btn {
   background: none;
   border: none;
-  color: #fff;
+  color: #efe7e7;
   font-size: 1.5rem;
   font-weight: 700;
   cursor: pointer;
@@ -317,7 +315,6 @@ button:hover {
     font-weight: 700; 
 }
 .banner-descuento { font-size: 4rem; margin: 0; line-height: 1; }
-.banner-marca { font-size: 2.5rem; font-weight: 800; margin: 8px 0; }
 .banner-legal { font-size: .8rem; opacity: .85; }
 
 .banner-img { 
