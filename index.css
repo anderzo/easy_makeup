@@ -51,10 +51,47 @@ body {
     text-align: center;
 }
 
-.nav h2 {
-    color: #fff;
-    margin-bottom: 10px;
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
+
+.dropdown-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  min-width: 200px;
+  margin: 0;
+  padding: 8px 0;
+  list-style: none;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,.2);
+  z-index: 100;
+}
+
+.dropdown:hover .dropdown-menu { display: block; }
+
+.dropdown-menu a {
+  display: block;
+  padding: 10px 20px;
+  color: #d63a6a;
+  text-decoration: none;
+  text-align: left;
+}
+
+.dropdown-menu a:hover { background: #d63a6a; color: #fff; }
 
 .lista {
     list-style: none;
@@ -246,3 +283,55 @@ button:hover {
 .as-metodo-pago ul {
     list-style: none;
 }
+
+.banner-promo { 
+    background: linear-gradient(90deg, #A62B67, #E8AE9B); 
+    color: #fff; 
+}
+
+.banner-btn   { 
+    background: #1E1E1E; 
+    color: #fff; 
+}
+
+.banner-promo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 24px 48px;
+  margin: 16px auto;
+  max-width: 1400px;
+  border-radius: 16px;
+  background: linear-gradient(90deg, #A62B67, #E8AE9B);
+  color: #fff;
+}
+
+.banner-texto { 
+    display: flex; 
+    flex-direction: 
+    column; 
+}
+.banner-hasta { 
+    font-size: 1.1rem; 
+    font-weight: 700; 
+}
+.banner-descuento { font-size: 4rem; margin: 0; line-height: 1; }
+.banner-marca { font-size: 2.5rem; font-weight: 800; margin: 8px 0; }
+.banner-legal { font-size: .8rem; opacity: .85; }
+
+.banner-img { 
+    object-fit: cover; 
+    border-radius: 12px; 
+}
+
+.banner-btn {
+  background: #1E1E1E;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 10px;
+  font-weight: 700;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.banner-btn:hover { background: #BDB947; color: #1E1E1E; }
