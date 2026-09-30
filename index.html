@@ -13,7 +13,7 @@
             <span> Tienda virtual de maquillaje y SkinCare | contacto: 99-99-99-99 | correo: easymakeupStore@gmail.com </span>
         </div>
         <div class="logo">
-            <img src="logo.jpeg" alt="" width="200" height="200">
+            <img src="imag/logo.jpeg" alt="" width="200" height="200">
         </div>
         <div class="descipccion">
             <p> Easy makeup store ya cuenta con servicio de entregas a todo el país 🇭🇳</p>
@@ -48,16 +48,32 @@
             </ul>
         </div>
     </nav>
-    <section class="banner-promo">
-        <div class="banner-texto">
-            <span class="banner-hasta">Hasta</span>
-            <h2 class="banner-descuento">35% DE DESCUENTO</h2>
-            <small class="banner-legal">PROMOCIONES VÁLIDAS HASTA AGOTAR EXISTENCIAS</small>
+    <section class="carrusel-contenedor">
+        <button class="carrusel-btn prev" aria-label="Anterior">&lt;</button>
+         <button class="carrusel-btn next" aria-label="Siguiente">&gt;</button>
+        <div class="carrusel-track">
+            <div class="banner-promo">
+                <div class="banner-texto">
+                    <span class="banner-hasta">Hasta</span>
+                    <h2 class="banner-descuento">35% DE DESCUENTO</h2>
+                    <small class="banner-legal">PROMOCIONES VÁLIDAS HASTA AGOTAR EXISTENCIAS</small>
+                </div>
+                <img class="banner-img" src="imag/OP.png" alt="Producto" width="135" height="200">
+                <img class="banner-img" src="imag/OP2.png" alt="Producto" width="135" height="200">
+                <a href="#" class="banner-btn">Ver ofertas</a>
+            </div>
+            <div class="banner-promo">
+                <div class="banner-texto">
+                    <span class="banner-hasta">APROVECHA NUESTROS DESCUENTOS</span>
+                    <h2 class="banner-descuento">20% DE DESCUENTO</h2>
+                    <small class="banner-legal">VÁLIDO POR COMPRAS MAYORES A 2 UNIDADES</small>
+                </div>
+                <img class="banner-img" src="imag/blush.png" alt="Producto" width="200" height="200">
+                <img class="banner-img" src="imag/gloss.png" alt="Producto" width="135" height="200">
+                <a href="#" class="banner-btn">Ver oferta</a>
+            </div>
         </div>
-        <img class="banner-img" src="OP.png" alt="Producto" width="135" height="200">
-        <img class="banner-img" src="OP2.png" alt="Producto" width="135" height="200">
-        <a href="#" class="banner-btn">Ver ofertas</a>
-</section>
+    </section>
     <main class="main">
         <div class="presentacion">
             <p>Descubre tu belleza natural, en nuestra tienda encontraras una seleccion cuidada de maquillaje y cuidado facial: </p>
@@ -121,5 +137,6 @@
             <p>&copy; 2026 Easy Makeup. Todos Los Derechos Reservados. Tegucigalpa Honduras</p>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>

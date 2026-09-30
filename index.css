@@ -342,3 +342,56 @@ button:hover {
   .banner-descuento { font-size: 3rem; }
   .banner-marca { font-size: 1.8rem; }
 }
+
+/* Contenedor relativo para posicionar los botones */
+.carrusel-contenedor {
+  position: relative;
+  width: 100%;
+  max-width: 1200px; /* O el ancho que prefieras */
+  margin: 0 auto;
+}
+
+/* El riel o tira que contiene las diapositivas */
+.carrusel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* Fuerza a que cada slide encaje en el centro/inicio */
+  scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en botones */
+  
+  /* Ocultar la barra de desplazamiento en todos los navegadores */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge */
+}
+
+.carrusel-track::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
+}
+
+/* Cada diapositiva o banner */
+.banner-promo {
+  flex: 0 0 100%; /* Cada banner ocupa exactamente el 100% del ancho del carrusel */
+  scroll-snap-align: start; /* Alineación del encaje */
+  box-sizing: border-box;
+  display: flex; /* O el layout interno que estés usando */
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+/* Botones opcionales de navegación */
+.carrusel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  font-size: 20px;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+}
+
+.carrusel-btn.prev { left: 10px; }
+.carrusel-btn.next { right: 10px; }
