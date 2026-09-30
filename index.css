@@ -305,98 +305,141 @@ button:hover {
   color: #fff;
 }
 
-.banner-texto { 
-    display: flex; 
-    flex-direction: column; 
-    font-size: 1.3rem;
-}
-.banner-hasta { 
-    font-size: 1.1rem; 
-    font-weight: 700; 
-}
-.banner-descuento { font-size: 4rem; margin: 0; line-height: 1; }
-.banner-legal { font-size: .8rem; opacity: .85; }
-
-.banner-img { 
-    object-fit: cover; 
-    max-width: 90%;
-    height: auto; /* Mantiene la proporción de la imagen */
-    object-fit: contain;
-    border-radius: 12px; 
+.banner-texto {
+  flex: 1 1 35%; /* Toma el espacio disponible hasta un 35% del total */
+  min-width: 0;  /* Permite encoger el texto sin romper la fila */
 }
 
-.banner-btn {
-  background: #1E1E1E;
-  color: #fff;
-  padding: 14px 28px;
-  border-radius: 10px;
-  font-weight: 700;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.banner-btn:hover { background: #BDB947; color: #1E1E1E; }
-
-@media (max-width: 768px) {
-  .banner-promo {
-    flex-direction: column;
-    text-align: center;
-    padding: 15px 10px;
-    gap: 12px;
-  }
-  .banner-descuento { font-size: 3rem; }
-  .banner-marca { font-size: 1.8rem; }
+.banner-hasta {
+  font-size: clamp(0.55rem, 2vw, 0.85rem);
+  display: block;
 }
 
-/* Contenedor relativo para posicionar los botones */
+.banner-descuento {
+  font-size: clamp(0.8rem, 3.2vw, 1.8rem);
+  margin: 2px 0;
+  line-height: 1.1;
+}
+.banner-legal {
+  font-size: clamp(0.45rem, 1.5vw, 0.65rem);
+  display: block;
+}
+
+.banner-img {
+  width: 18%;       /* Cada imagen ocupa máximo el 18% del ancho del banner */
+  max-width: 120px; /* Tamaño máximo en computadoras */
+  height: auto;     /* Mantiene la proporción de la imagen */
+  object-fit: contain;
+  flex-shrink: 1;   /* Permite que la imagen se reduzca si falta espacio */
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
 .carrusel-contenedor {
   position: relative;
   width: 100%;
-  max-width: 1200px; /* O el ancho que prefieras */
+  max-width: 1200px;
   margin: 0 auto;
+  overflow: hidden; /* Evita que el contenido sobresalga */
 }
 
-/* El riel o tira que contiene las diapositivas */
 .carrusel-track {
   display: flex;
   overflow-x: auto;
-  scroll-snap-type: x mandatory; /* Fuerza a que cada slide encaje en el centro/inicio */
-  scroll-behavior: smooth; /* Desplazamiento suave al hacer clic en botones */
-  
-  /* Ocultar la barra de desplazamiento en todos los navegadores */
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE y Edge */
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
 }
 
 .carrusel-track::-webkit-scrollbar {
-  display: none; /* Chrome, Safari y Opera */
+  display: none;
 }
 
-/* Cada diapositiva o banner */
+/* --- CADA BANNER (FUERZA 1 SOLO BANNER VISIBLE Y 100% HORIZONTAL) --- */
 .banner-promo {
-  flex: 0 0 100%;
-  min-width: 0; /* Cada banner ocupa exactamente el 100% del ancho del carrusel */
-  scroll-snap-align: start; /* Alineación del encaje */
-  box-sizing: border-box;
-  display: flex; /* O el layout interno que estés usando */
+  flex: 0 0 100% !important;     /* CLAVE: Obliga a que cada banner ocupe exactamente todo el ancho */
+  min-width: 100% !important;   /* Garantiza que solo se vea un banner a la vez */
+  scroll-snap-align: start;     /* Encaje perfecto al deslizar */
+  
+  display: flex !important;
+  flex-direction: row !important; /* Mantiene la fila horizontal SIEMPRE */
+  flex-wrap: nowrap !important;   /* Evita caídas de elementos */
   align-items: center;
-  justify-content: space-around;
-  padding: 20px;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 15px;
+  box-sizing: border-box;
 }
 
-/* Botones opcionales de navegación */
+/* --- TEXTO FLUIDO --- */
+.banner-texto {
+  flex: 1 1 35%;
+  min-width: 0; /* Permite que el texto se reduzca en pantallas chicas */
+}
+
+.banner-hasta {
+  font-size: clamp(0.55rem, 1.8vw, 0.85rem);
+  display: block;
+}
+
+.banner-descuento {
+  font-size: clamp(0.85rem, 2.8vw, 1.8rem);
+  margin: 2px 0;
+  line-height: 1.1;
+}
+
+.banner-legal {
+  font-size: clamp(0.45rem, 1.3vw, 0.65rem);
+  display: block;
+}
+
+/* --- IMÁGENES CON RADIUS --- */
+.banner-img {
+  width: 18%;            /* Porcentaje para ajustar horizontalmente */
+  max-width: 140px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;   /* Esquinas redondeadas agregadas */
+  flex-shrink: 1;
+}
+
+/* --- BOTÓN DE COMPRA --- */
+.banner-btn {
+  background: #1E1E1E;
+  flex: 0 0 auto;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 10px;
+  font-size: clamp(0.6rem, 1.8vw, 0.9rem);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.banner-btn:hover {
+  background: #BDB947;
+  color: #1E1E1E;
+}
+
+/* --- BOTONES DE NAVEGACIÓN (FLECHAS) --- */
 .carrusel-btn {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   color: white;
   border: none;
   font-size: 14px;
-  padding: 6px 10px;
+  padding: 8px 12px;
   cursor: pointer;
   z-index: 10;
   border-radius: 50%;
+  transition: background 0.2s ease;
 }
 
-.carrusel-btn.prev { left: 10px; }
-.carrusel-btn.next { right: 10px; }
+.carrusel-btn:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.carrusel-btn.prev { left: 8px; }
+.carrusel-btn.next { right: 8px; }
