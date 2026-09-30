@@ -307,8 +307,8 @@ button:hover {
 
 .banner-texto { 
     display: flex; 
-    flex-direction: 
-    column; 
+    flex-direction: column; 
+    font-size: 1.3rem;
 }
 .banner-hasta { 
     font-size: 1.1rem; 
@@ -319,6 +319,9 @@ button:hover {
 
 .banner-img { 
     object-fit: cover; 
+    max-width: 90%;
+    height: auto; /* Mantiene la proporción de la imagen */
+    object-fit: contain;
     border-radius: 12px; 
 }
 
@@ -337,7 +340,8 @@ button:hover {
   .banner-promo {
     flex-direction: column;
     text-align: center;
-    padding: 20px;
+    padding: 15px 10px;
+    gap: 12px;
   }
   .banner-descuento { font-size: 3rem; }
   .banner-marca { font-size: 1.8rem; }
@@ -369,7 +373,8 @@ button:hover {
 
 /* Cada diapositiva o banner */
 .banner-promo {
-  flex: 0 0 100%; /* Cada banner ocupa exactamente el 100% del ancho del carrusel */
+  flex: 0 0 100%;
+  min-width: 0; /* Cada banner ocupa exactamente el 100% del ancho del carrusel */
   scroll-snap-align: start; /* Alineación del encaje */
   box-sizing: border-box;
   display: flex; /* O el layout interno que estés usando */
@@ -386,8 +391,8 @@ button:hover {
   background: rgba(0, 0, 0, 0.5);
   color: white;
   border: none;
-  font-size: 20px;
-  padding: 10px 15px;
+  font-size: 14px;
+  padding: 6px 10px;
   cursor: pointer;
   z-index: 10;
   border-radius: 50%;
