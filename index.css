@@ -462,19 +462,23 @@ button:hover {
 
 /* Fondo oscuro transparente del modal (Oculto por defecto) */
 .modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.6);
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  width: 100vw !important;
+  height: 100vh !important;
+  background: rgba(0, 0, 0, 0.75);
   display: flex;
   align-items: center;
   justify-content: center;
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  z-index: 1000;
+  z-index: 999999 !important; /* Fuerza a estar por encima de todo el carrusel */
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 /* Tarjeta central del modal */
@@ -484,9 +488,11 @@ button:hover {
   border-radius: 12px;
   text-align: center;
   position: relative;
-  max-width: 280px;
-  width: 90%;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  width: 100%;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+  max-height: 90vh; /* Evita que la tarjeta se salga en pantallas pequeñas */
+  overflow-y: auto;  /* Permite scroll si el celular es muy corto */
 }
 
 /* Botón cerrar X */
@@ -523,8 +529,15 @@ button:hover {
   background-color: #1eb956;
 }
 
-/* --- TRUCO CSS: Muestra el modal cuando el checkbox está marcado --- */
+.button-buy, 
+.btn-close {
+  cursor: pointer !important;
+  -webkit-tap-highlight-color: transparent; /* Mejora la respuesta al toque en iOS/Android */
+  user-select: none;
+}
+
+/* --- 4. ACTIVACIÓN DEL MODAL --- */
 .modal-toggle:checked ~ .modal {
-  opacity: 1;
-  pointer-events: auto;
+  opacity: 1 !important;
+  pointer-events: auto !important;
 }
