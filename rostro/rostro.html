@@ -8,12 +8,28 @@
 </head>
 <body>
     <header class="header">
-        <h1> Perfección En Tu Piel </h1>
+        <h1> Perfección Para Tu Rostro </h1>
         <div class="logo">
             <a href="../index.html"><img src="../imag/logo.jpeg" alt="" width="100" height="100"></a>
         </div>
         <span> Entregas de lunes a viernes en UNAH-CU. Contactanos: 99-99-99-99 @Ana_Gabriela</span>
     </header>
+    <nav class="nav">
+        <div class="logo"> Categorias </div>
+        <input type="checkbox" id="toggle" aria-label="Abrir menú">
+        <label for="toggle" class="burger">
+        <span></span><span></span><span></span>
+        </label>
+        <ul class="menu" >
+            <li><a href="../index.html"><strong> Inicio</strong></a></li>
+            <li><a href="../rostro/rostro.html"> <strong> Rostro </strong></a></li>                
+            <li><a href="../labios/labios.html"> <strong> Labios </strong></a></li>
+            <li><a href="../ojos/ojos.html"> <strong> Ojos </strong></a></li>
+            <li><a href="../accesorios/accesorios.html"> <strong> Accesorios </strong></a></li>
+            <li><a href="##"> <strong> Cremas </strong></a></li>
+            <li> <a href="##"> <strong> Proveedores </strong></a></li>
+        </ul>
+    </nav>
     <main class="main">
         <div>
             <p>Bases, correctores y polvos para lograr un acabado uniforme y perfecto.</p>
@@ -27,8 +43,22 @@
                 </figure>
                 <p> <strong>Precio: </strong> 430 L </p>
                 <p>Difuminan imperfecciones, fijan tu maquillaje y rinden muchísimo </p>
-                <button> Comprar </button>
+                <label for="modal-brochas-1" class="button-buy">Comprar</label>
             </article>
+            <input type="checkbox" id="modal-brochas-1" class="modal-toggle">
+            <div class="modal">
+                <div class="modal-card">
+                    <label for="modal-brochas-1" class="btn-close">&times;</label>
+                    <h4>Escanéa el codigo o haz clic abajo</h4>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20LOS%20POLVOS%20AIRsPUM%20por%20430%20L" 
+                        alt="QR WhatsApp" 
+                        class="qr-img">
+                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20LOS%20POLVOS%20AIRSPUM%20por%20430%20L" 
+                        target="_blank" 
+                        class="btn-wa"
+                    > Comprar por WhatsApp</a>
+                </div>
+            </div>
         </section>
         <section>
             <h3> Buttermelt Blush De Nyx </h3>
@@ -40,8 +70,22 @@
                 <p> <strong>Precio: </strong> 100 L </p>
                 <p> Tus tonos favoritos de los buttermelt blush </p>
                 <p> Disponibles en: Getting Butta, U Know Butta, Feeling Butta</p>
-                <button> Comprar </button>
+                <label for="modal-brochas-0" class="button-buy">Comprar</label>
             </article>
+            <input type="checkbox" id="modal-brochas-0" class="modal-toggle">
+            <div class="modal">
+                <div class="modal-card">
+                    <label for="modal-brochas-0" class="btn-close">&times;</label>
+                    <h4>Escanéa el codigo o haz clic abajo</h4>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20BUTTERMELT%20por%20100%20L" 
+                        alt="QR WhatsApp" 
+                        class="qr-img">
+                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20BUTTERMELT%20por%20100%20L" 
+                        target="_blank" 
+                        class="btn-wa"
+                    > Comprar por WhatsApp</a>
+                </div>
+            </div>
         </section>
         <section>
             <h3> Serum De Acido Hialuronico </h3>
@@ -52,8 +96,22 @@
                 </figure>
                 <p> <strong>Precio: </strong> 460 L </p>
                 <p>Es perfecto para usar en la mañana al iniciar tu día o en la noche luego de tu skincare</p>
-                <button> Comprar </button>
+                <label for="modal-brochas-2" class="button-buy">Comprar</label>
             </article>
+            <input type="checkbox" id="modal-brochas-2" class="modal-toggle">
+            <div class="modal">
+                <div class="modal-card">
+                    <label for="modal-brochas-2" class="btn-close">&times;</label>
+                    <h4>Escanéa el codigo o haz clic abajo</h4>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20SERUM%20DE%20HACIDO%20HIALURONICO%20por%20460%20L" 
+                        alt="QR WhatsApp" 
+                        class="qr-img">
+                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20SERUM%20DE%20HACIDO%20HIALURONICO%20por%20460%20L" 
+                        target="_blank" 
+                        class="btn-wa"
+                    > Comprar por WhatsApp</a>
+                </div>
+            </div>
         </section>
         <section>
             <h3> elf Camo Concealer </h3>
@@ -64,7 +122,22 @@
                 </figure>
                 <p> <strong>Precio: </strong> 380 L </p>
                 <p>Perfecto para un maquillaje duradero y de full cobertura</p>
-                <button> Comprar </button>
+                <label for="modal-brochas-3" class="button-buy">Comprar</label>
+            </article>
+            <input type="checkbox" id="modal-brochas-3" class="modal-toggle">
+            <div class="modal">
+                <div class="modal-card">
+                    <label for="modal-brochas-3" class="btn-close">&times;</label>
+                    <h4>Escanéa el codigo o haz clic abajo</h4>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20EKF%20CAMO%20por%20380%20L" 
+                        alt="QR WhatsApp" 
+                        class="qr-img">
+                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20ELF%20CAMO%20por%20460%20L" 
+                        target="_blank" 
+                        class="btn-wa"
+                    > Comprar por WhatsApp</a>
+                </div>
+            </div>
             </article>
         </section>
     </main>

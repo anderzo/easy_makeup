@@ -43,12 +43,6 @@ body {
     border-radius: 8px;
 }
 
-.nav {
-    background: #da4874;
-    padding: 12px;
-    text-align: center;
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
@@ -165,6 +159,7 @@ body {
 .as-horario {
     background: #fff;
     border-left: 6px solid #d63a6a;
+    border-right: 6px solid #A62B67;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -417,8 +412,8 @@ button:hover {
 }
 
 .banner-btn:hover {
-  background: #BDB947;
-  color: #1E1E1E;
+  background: #ac0d4f;
+  color: #f9f7f7;
 }
 
 /* --- BOTONES DE NAVEGACIÓN (FLECHAS) --- */
@@ -541,3 +536,97 @@ button:hover {
   opacity: 1 !important;
   pointer-events: auto !important;
 }
+
+:root {
+    --bg: #0e0f12;
+    --panel: #181a20;
+    --line: #e8e8ea;
+    --text: #e8e8ea;
+    --hover: #262932;
+    --accent: #6ea8ff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+/* NAV */
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 20px;
+    background: var(--panel);
+    border-bottom: 1px solid #2a2d36;
+    z-index: 1000;
+}
+
+.nav {
+    background: #da4874;
+}
+
+  /* Checkbox oculto: controla el estado abierto/cerrado */
+#toggle { display: none; }
+
+  /* Icono hamburguesa (3 líneas) */
+.burger {
+    width: 36px;
+    height: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 4px 2px;
+}
+
+.burger span {
+    display: block;
+    height: 3px;
+    background: var(--line);
+    border-radius: 3px;
+    transition: transform .3s, opacity .3s;
+}
+.logo { 
+  font-weight: 700; 
+  font-size: 1.1rem; 
+  color: #fffdfd;
+}
+
+.burger:focus-visible,
+
+#toggle:focus-visible + .burger { outline: 2px solid var(--accent); outline-offset: 4px; }
+
+  /* Se transforma en X al abrir */
+#toggle:checked + .burger span:nth-child(1) { transform: translateY(9.5px) rotate(45deg); }
+#toggle:checked + .burger span:nth-child(2) { opacity: 0; }
+#toggle:checked + .burger span:nth-child(3) { transform: translateY(-9.5px) rotate(-45deg); }
+
+  /* Menú desplegable */
+.menu {
+    position: absolute;
+    top: 100%;
+    right: 20px;
+    min-width: 200px;
+    list-style: none;
+    background: var(--panel);
+    border: 1px solid #2a2d36;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-8px);
+    transition: opacity .25s, transform .25s, visibility .25s;
+    z-index: 1001;
+}
+#toggle:checked ~ .menu {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(8px);
+}
+.menu a {
+    display: block;
+    padding: 12px 18px;
+    color: var(--text);
+    text-decoration: none;
+    transition: background .2s;
+}
+.menu a:hover,
+.menu a:focus-visible { background: var(--hover); color: var(--accent); }
