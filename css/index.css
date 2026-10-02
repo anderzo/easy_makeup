@@ -15,6 +15,24 @@ h1, h2, .logo {
   font-family: "Playfair Display", serif;
 }
 
+.header h1 {
+    font-size: clamp(1.1rem, 4vw + 0.5rem, 2.5rem);
+    letter-spacing: 2px;
+    margin: 0 0 8px;
+}
+
+.contacto span {
+    font-size: clamp(0.75rem, 2vw + 0.3rem, 1.1rem);
+}
+
+.info {
+    min-width: 0; /* permite que el texto se encoja dentro del flex */
+}
+
+.logo {
+    flex-shrink: 0; /* evita que el logo se aplaste */
+}
+
 .header {
     background: linear-gradient(135deg, #c2185b, #ff85a2, #ffb6c9); 
     color: #fff;
