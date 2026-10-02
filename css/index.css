@@ -16,10 +16,21 @@ h1, h2, .logo {
 }
 
 .header {
-    background: linear-gradient(135deg, #ff85a2, #ffb6c9);
+    background: linear-gradient(135deg, #c2185b, #ff85a2, #ffb6c9); 
     color: #fff;
-    text-align: center;
     padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    object-fit: cover;
+    display: block;
 }
 
 .header h1 {
@@ -61,21 +72,6 @@ h1, h2, .logo {
   cursor: pointer;
 }
 
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  transform: translateX(-50%);
-  min-width: 200px;
-  margin: 0;
-  padding: 8px 0;
-  list-style: none;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 6px 16px rgba(0,0,0,.2);
-  z-index: 100;
-}
 
 .dropdown:focus-within .dropdown-menu { display: block; }
 
