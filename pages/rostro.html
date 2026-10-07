@@ -9,7 +9,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="../index.html"><img src="../assets/imag/logo.jpeg" alt="" width="100" height="100"></a>
+            <a href="../index.html"><img src="../assets/imag/logo.jpeg" alt="Logo" width="100" height="100"></a>
         </div>
         <div class="info">
             <h1>PERFECCIÓN PARA TU ROSTRO</h1>
@@ -18,134 +18,196 @@
             </div>
         </div>
     </header>
+
     <nav class="nav">
         <div class="logo"> Categorías </div>
         <input type="checkbox" id="toggle" aria-label="Abrir menú">
         <label for="toggle" class="burger">
-        <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
         </label>
-        <ul class="menu" >
+        <ul class="menu">
             <li><a href="../index.html"><strong> Inicio</strong></a></li>
-            <li><a href="../pages/labios.html"> <strong> Labios </strong></a></li>
-            <li><a href="../pages/ojos.html"> <strong> Ojos </strong></a></li>
-            <li><a href="../pages/accesorios.html"> <strong> Accesorios </strong></a></li>
-            <li><a href="##"> <strong> Cremas </strong></a></li>
-            <li> <a href="##"> <strong> Proveedores </strong></a></li>
+            <li><a href="../pages/labios.html"><strong> Labios </strong></a></li>
+            <li><a href="../pages/ojos.html"><strong> Ojos </strong></a></li>
+            <li><a href="../pages/accesorios.html"><strong> Accesorios </strong></a></li>
+            <li><a href="##"><strong> Cremas </strong></a></li>
+            <li><a href="##"><strong> Proveedores </strong></a></li>
         </ul>
     </nav>
+
     <main class="main">
-        <div>
-            <p>Bases, correctores y polvos para lograr un acabado uniforme y perfecto.</p>
+        <div class="descipccion">
+            <p>Bases, correctores y polvos para lograr un acabado uniforme y perfecto</p>
         </div>
-        <section>
+
+        <section class="sect">
             <h3> Los polvos Airspun </h3>
-            <article>
+            <article class="art">
+                <label for="detalle-rostro-1" class="card-click" aria-label="Ver detalles"></label>
                 <figure>
-                    <img src="../assets/rostro/1.png" alt="" width="220" height="200">
+                    <img src="../assets/rostro/1.png" alt="Polvos Airspun" width="220" height="200">
                     <figcaption> Unidad </figcaption>
                 </figure>
-                <p> <strong>Precio: </strong> 430 L </p>
-                <p>Difuminan imperfecciones, fijan tu maquillaje y rinden muchísimo </p>
-                <label for="modal-brochas-1" class="button-buy">Comprar</label>
+                <p><strong>Precio: </strong> 430 L</p>
+                <p>Difuminan imperfecciones, fijan tu maquillaje y rinden muchísimo</p>
+                <label for="modal-rostro-1" class="button-buy btn-card">Comprar</label>
             </article>
-            <input type="checkbox" id="modal-brochas-1" class="modal-toggle">
+
+            <input type="checkbox" id="detalle-rostro-1" class="modal-toggle">
+            <div class="modal modal-detalle">
+                <div class="modal-card">
+                    <label for="detalle-rostro-1" class="btn-close">&times;</label>
+                    <img src="../assets/rostro/1.png" alt="Polvos Airspun" width="160" height="160">
+                    <h4>Polvos Airspun</h4>
+                    <p><strong>Precio: </strong> 430 L</p>
+                    <p>
+                        Polvos sueltos que difuminan imperfecciones y fijan tu maquillaje,
+                        rinden muchísimo y dejan un acabado uniforme
+                    </p>
+                    <label for="modal-rostro-1" class="button-buy">Comprar</label>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-rostro-1" class="modal-toggle qr-toggle">
             <div class="modal">
                 <div class="modal-card">
-                    <label for="modal-brochas-1" class="btn-close">&times;</label>
+                    <label for="modal-rostro-1" class="btn-close">&times;</label>
                     <h4>Escanéa el codigo o haz clic abajo</h4>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20LOS%20POLVOS%20AIRsPUM%20por%20430%20L" 
-                        alt="QR WhatsApp" 
-                        class="qr-img">
-                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20LOS%20POLVOS%20AIRSPUM%20por%20430%20L" 
-                        target="_blank" 
-                        class="btn-wa"
-                    > Comprar por WhatsApp</a>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20LOS%20POLVOS%20AIRSPUN%20por%20430%20L"
+                         alt="QR WhatsApp" class="qr-img">
+                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20LOS%20POLVOS%20AIRSPUN%20por%20430%20L"
+                       target="_blank" class="btn-wa">Comprar por WhatsApp</a>
                 </div>
             </div>
         </section>
-        <section>
+
+        <section class="sect">
             <h3> Buttermelt Blush De Nyx </h3>
-            <article>
+            <article class="art">
+                <label for="detalle-rostro-2" class="card-click" aria-label="Ver detalles"></label>
                 <figure>
-                    <img src="../assets/rostro/2.png" alt="" width="220" height="200">
+                    <img src="../assets/rostro/2.png" alt="Buttermelt Blush" width="220" height="200">
                     <figcaption> Unidad </figcaption>
                 </figure>
-                <p> <strong>Precio: </strong> 100 L </p>
-                <p> Tus tonos favoritos de los buttermelt blush </p>
-                <p> Disponibles en: Getting Butta, U Know Butta, Feeling Butta</p>
-                <label for="modal-brochas-0" class="button-buy">Comprar</label>
+                <p><strong>Precio: </strong> 100 L</p>
+                <p>Tus tonos favoritos de los buttermelt blush</p>
+                <p>Disponibles en: Getting Butta, U Know Butta, Feeling Butta</p>
+                <label for="modal-rostro-2" class="button-buy btn-card">Comprar</label>
             </article>
-            <input type="checkbox" id="modal-brochas-0" class="modal-toggle">
+
+            <input type="checkbox" id="detalle-rostro-2" class="modal-toggle">
+            <div class="modal modal-detalle">
+                <div class="modal-card">
+                    <label for="detalle-rostro-2" class="btn-close">&times;</label>
+                    <img src="../assets/rostro/2.png" alt="Buttermelt Blush" width="160" height="160">
+                    <h4>Buttermelt Blush De Nyx</h4>
+                    <p><strong>Precio: </strong> 100 L</p>
+                    <p>
+                        Rubor en textura cremosa que se derrite sobre la piel,
+                        disponible en los tonos: Getting Butta, U Know Butta y Feeling Butta
+                    </p>
+                    <label for="modal-rostro-2" class="button-buy">Comprar</label>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-rostro-2" class="modal-toggle qr-toggle">
             <div class="modal">
                 <div class="modal-card">
-                    <label for="modal-brochas-0" class="btn-close">&times;</label>
+                    <label for="modal-rostro-2" class="btn-close">&times;</label>
                     <h4>Escanéa el codigo o haz clic abajo</h4>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20BUTTERMELT%20por%20100%20L" 
-                        alt="QR WhatsApp" 
-                        class="qr-img">
-                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20BUTTERMELT%20por%20100%20L" 
-                        target="_blank" 
-                        class="btn-wa"
-                    > Comprar por WhatsApp</a>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20BUTTERMELT%20por%20100%20L"
+                         alt="QR WhatsApp" class="qr-img">
+                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20BUTTERMELT%20por%20100%20L"
+                       target="_blank" class="btn-wa">Comprar por WhatsApp</a>
                 </div>
             </div>
         </section>
-        <section>
+
+        <section class="sect">
             <h3> Serum De Acido Hialuronico </h3>
-            <article>
+            <article class="art">
+                <label for="detalle-rostro-3" class="card-click" aria-label="Ver detalles"></label>
                 <figure>
-                    <img src="../assets/rostro/3.png" alt="" width="220" height="200">
+                    <img src="../assets/rostro/3.png" alt="Serum de ácido hialurónico" width="220" height="200">
                     <figcaption> Unidad </figcaption>
                 </figure>
-                <p> <strong>Precio: </strong> 460 L </p>
+                <p><strong>Precio: </strong> 460 L</p>
                 <p>Es perfecto para usar en la mañana al iniciar tu día o en la noche luego de tu skincare</p>
-                <label for="modal-brochas-2" class="button-buy">Comprar</label>
+                <label for="modal-rostro-3" class="button-buy btn-card">Comprar</label>
             </article>
-            <input type="checkbox" id="modal-brochas-2" class="modal-toggle">
+
+            <input type="checkbox" id="detalle-rostro-3" class="modal-toggle">
+            <div class="modal modal-detalle">
+                <div class="modal-card">
+                    <label for="detalle-rostro-3" class="btn-close">&times;</label>
+                    <img src="../assets/rostro/3.png" alt="Serum de ácido hialurónico" width="160" height="160">
+                    <h4>Serum De Acido Hialuronico</h4>
+                    <p><strong>Precio: </strong> 460 L</p>
+                    <p>
+                        Sérum ideal para usar en la mañana al iniciar tu día
+                        o en la noche después de tu rutina de skincare
+                    </p>
+                    <label for="modal-rostro-3" class="button-buy">Comprar</label>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-rostro-3" class="modal-toggle qr-toggle">
             <div class="modal">
                 <div class="modal-card">
-                    <label for="modal-brochas-2" class="btn-close">&times;</label>
+                    <label for="modal-rostro-3" class="btn-close">&times;</label>
                     <h4>Escanéa el codigo o haz clic abajo</h4>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20SERUM%20DE%20HACIDO%20HIALURONICO%20por%20460%20L" 
-                        alt="QR WhatsApp" 
-                        class="qr-img">
-                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20SERUM%20DE%20HACIDO%20HIALURONICO%20por%20460%20L" 
-                        target="_blank" 
-                        class="btn-wa"
-                    > Comprar por WhatsApp</a>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20SERUM%20DE%20ACIDO%20HIALURONICO%20por%20460%20L"
+                         alt="QR WhatsApp" class="qr-img">
+                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20SERUM%20DE%20ACIDO%20HIALURONICO%20por%20460%20L"
+                       target="_blank" class="btn-wa">Comprar por WhatsApp</a>
                 </div>
             </div>
         </section>
-        <section>
+
+        <section class="sect">
             <h3> elf Camo Concealer </h3>
-            <article>
+            <article class="art">
+                <label for="detalle-rostro-4" class="card-click" aria-label="Ver detalles"></label>
                 <figure>
-                    <img src="../assets/rostro/4.png" alt="" width="220" height="200">
+                    <img src="../assets/rostro/4.png" alt="elf Camo Concealer" width="220" height="200">
                     <figcaption> Unidad </figcaption>
                 </figure>
-                <p> <strong>Precio: </strong> 380 L </p>
+                <p><strong>Precio: </strong> 380 L</p>
                 <p>Perfecto para un maquillaje duradero y de full cobertura</p>
-                <label for="modal-brochas-3" class="button-buy">Comprar</label>
+                <label for="modal-rostro-4" class="button-buy btn-card">Comprar</label>
             </article>
-            <input type="checkbox" id="modal-brochas-3" class="modal-toggle">
-            <div class="modal">
+
+            <input type="checkbox" id="detalle-rostro-4" class="modal-toggle">
+            <div class="modal modal-detalle">
                 <div class="modal-card">
-                    <label for="modal-brochas-3" class="btn-close">&times;</label>
-                    <h4>Escanéa el codigo o haz clic abajo</h4>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20EKF%20CAMO%20por%20380%20L" 
-                        alt="QR WhatsApp" 
-                        class="qr-img">
-                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20ELF%20CAMO%20por%20460%20L" 
-                        target="_blank" 
-                        class="btn-wa"
-                    > Comprar por WhatsApp</a>
+                    <label for="detalle-rostro-4" class="btn-close">&times;</label>
+                    <img src="../assets/rostro/4.png" alt="elf Camo Concealer" width="160" height="160">
+                    <h4>elf Camo Concealer</h4>
+                    <p><strong>Precio: </strong> 380 L</p>
+                    <p>
+                        Corrector de full cobertura para un maquillaje duradero,
+                        cubre imperfecciones y ojeras con un acabado uniforme
+                    </p>
+                    <label for="modal-rostro-4" class="button-buy">Comprar</label>
                 </div>
             </div>
-            </article>
+
+            <input type="checkbox" id="modal-rostro-4" class="modal-toggle qr-toggle">
+            <div class="modal">
+                <div class="modal-card">
+                    <label for="modal-rostro-4" class="btn-close">&times;</label>
+                    <h4>Escanéa el codigo o haz clic abajo</h4>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20ELF%20CAMO%20por%20380%20L"
+                         alt="QR WhatsApp" class="qr-img">
+                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20ELF%20CAMO%20por%20380%20L"
+                       target="_blank" class="btn-wa">Comprar por WhatsApp</a>
+                </div>
+            </div>
         </section>
+
         <aside class="as-horario">
             <h2>Métodos De Pago </h2>
-            <ul>
+            <ul class="ul-horario">
                 <li> Efectivo</li>
                 <li> Transferencia </li>
                 <li> Banco Atlantida</li>
@@ -154,12 +216,12 @@
             </ul>
         </aside>
     </main>
+
     <footer class="foot-redes">
-        
         <div class="div-redes">
-            <h3> Siguenos en Nuestras Redes</h3>
+            <h3> Síguenos en Nuestras Redes</h3>
             <ul>
-                <a href="https://www.instagram.com/easy_makeupstore/"> <img src="../assets/ODF.webp" alt="jj"></a>
+                <a href="https://www.instagram.com/easy_makeupstore/"><img src="../assets/ODF.webp" alt="Instagram"></a>
                 <span> @easy_makeupStore </span>
                 <a href=""><img src="../assets/ODF3.png" alt=""></a>
                 <samp> Ana Gabriela | 99-99-99-99</samp>
@@ -169,7 +231,7 @@
             <p><strong> Desarrollado por: </strong>Richard Anderzon Garica Rivera</p>
         </div>
         <div>
-            <p>&copy; 2026 Easy Makeup. Todos Los Derechos Resercados. Tegucigalpa Honduras</p>
+            <p>&copy; 2026 Easy Makeup. Todos Los Derechos Reservados. Tegucigalpa Honduras</p>
         </div>
     </footer>
 </body>

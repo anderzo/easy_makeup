@@ -9,7 +9,7 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="../index.html"><img src="../assets/imag/logo.jpeg" alt="" width="100" height="100"></a>
+            <a href="../index.html"><img src="../assets/imag/logo.jpeg" alt="Logo" width="100" height="100"></a>
         </div>
         <div class="info">
             <h1>MIRADA INTENSA</h1>
@@ -18,95 +18,128 @@
             </div>
         </div>
     </header>
+
     <nav class="nav">
         <div class="logo"> Categorías </div>
         <input type="checkbox" id="toggle" aria-label="Abrir menú">
         <label for="toggle" class="burger">
-        <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
         </label>
-        <ul class="menu" >
+        <ul class="menu">
             <li><a href="../index.html"><strong> Inicio</strong></a></li>
-            <li><a href="../pages/rostro.html"> <strong> Rostro </strong></a></li>                
-            <li><a href="../pages/labios.html"> <strong> Labios </strong></a></li>
-            <li><a href="../pages/accesorios.html"> <strong> Accesorios </strong></a></li>
-            <li><a href="##"> <strong> Cremas </strong></a></li>
-            <li> <a href="##"> <strong> Proveedores </strong></a></li>
+            <li><a href="../pages/rostro.html"><strong> Rostro </strong></a></li>
+            <li><a href="../pages/labios.html"><strong> Labios </strong></a></li>
+            <li><a href="../pages/accesorios.html"><strong> Accesorios </strong></a></li>
+            <li><a href="##"><strong> Cremas </strong></a></li>
+            <li><a href="##"><strong> Proveedores </strong></a></li>
         </ul>
     </nav>
+
     <main class="main">
-        <div>
-            <p>Sombras, delineadores y mascaras para una mirada intensa y expresiva.</p>
+        <div class="descipccion">
+            <p>Sombras, delineadores y mascaras para una mirada intensa y expresiva</p>
         </div>
-        <section>
+
+        <section class="sect">
             <h3> Rimel </h3>
-            <article>
+            <article class="art">
+                <label for="detalle-ojos-1" class="card-click" aria-label="Ver detalles"></label>
                 <figure>
-                    <img src="../assets/ojos/1.png" alt="" width="220" height="200">
+                    <img src="../assets/ojos/1.png" alt="Rimel" width="220" height="200">
                     <figcaption> Unidad </figcaption>
                 </figure>
-                <p> <strong>Precio: </strong> 100 L </p>
-                <p>No tienes brochas para tus sombras? </p>
+                <p><strong>Precio: </strong> 100 L</p>
                 <p>El secreto de las girlys para unas pestañas enormes y que duren todo el día</p>
-                <label for="modal-brochas-0" class="button-buy">Comprar</label>
+                <label for="modal-ojos-1" class="button-buy btn-card">Comprar</label>
             </article>
-            <input type="checkbox" id="modal-brochas-0" class="modal-toggle">
+
+            <input type="checkbox" id="detalle-ojos-1" class="modal-toggle">
+            <div class="modal modal-detalle">
+                <div class="modal-card">
+                    <label for="detalle-ojos-1" class="btn-close">&times;</label>
+                    <img src="../assets/ojos/1.png" alt="Rimel" width="160" height="160">
+                    <h4>Rimel</h4>
+                    <p><strong>Precio: </strong> 100 L</p>
+                    <p>
+                        El secreto de las girlys para unas pestañas enormes
+                        alarga y da volumen a tus pestañas, con un efecto que dura todo el día
+                    </p>
+                    <label for="modal-ojos-1" class="button-buy">Comprar</label>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-ojos-1" class="modal-toggle qr-toggle">
             <div class="modal">
                 <div class="modal-card">
-                    <label for="modal-brochas-0" class="btn-close">&times;</label>
+                    <label for="modal-ojos-1" class="btn-close">&times;</label>
                     <h4>Escanéa el codigo o haz clic abajo</h4>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20RIMEL%20por%20100%20L" 
-                        alt="QR WhatsApp" 
-                        class="qr-img">
-                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20RIMEL%20por%20100%20L" 
-                        target="_blank" 
-                        class="btn-wa"
-                    > Comprar por WhatsApp</a>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20RIMEL%20por%20100%20L"
+                         alt="QR WhatsApp" class="qr-img">
+                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20RIMEL%20por%20100%20L"
+                       target="_blank" class="btn-wa">Comprar por WhatsApp</a>
                 </div>
             </div>
         </section>
-        <section>
+
+        <section class="sect">
             <h3> Encrespadores|Enchinadores </h3>
-            <article>
+            <article class="art">
+                <label for="detalle-ojos-2" class="card-click" aria-label="Ver detalles"></label>
                 <figure>
-                    <img src="../assets/ojos/2.png" alt="" width="220" height="200">
+                    <img src="../assets/ojos/2.png" alt="Encrespador de pestañas" width="220" height="200">
                     <figcaption> Unidad </figcaption>
                 </figure>
-                <p> <strong>Precio: </strong> 60 L </p>
-                <p>Ojos tristes? Nunca </p>
+                <p><strong>Precio: </strong> 60 L</p>
+                <p>Ojos tristes? Nunca</p>
                 <p>Por eso levanta tu mirada con los encrespadores levanta pestañas</p>
-                <label for="modal-brochas-1" class="button-buy">Comprar</label>
+                <label for="modal-ojos-2" class="button-buy btn-card">Comprar</label>
             </article>
-            <input type="checkbox" id="modal-brochas-1" class="modal-toggle">
+
+            <input type="checkbox" id="detalle-ojos-2" class="modal-toggle">
+            <div class="modal modal-detalle">
+                <div class="modal-card">
+                    <label for="detalle-ojos-2" class="btn-close">&times;</label>
+                    <img src="../assets/ojos/2.png" alt="Encrespador de pestañas" width="160" height="160">
+                    <h4>Encrespadores | Enchinadores</h4>
+                    <p><strong>Precio: </strong> 60 L</p>
+                    <p>
+                        Levanta y curva tus pestañas para abrir la mirada,
+                        úsalo antes del rimel para un efecto más marcado y duradero
+                    </p>
+                    <label for="modal-ojos-2" class="button-buy">Comprar</label>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-ojos-2" class="modal-toggle qr-toggle">
             <div class="modal">
                 <div class="modal-card">
-                    <label for="modal-brochas-1" class="btn-close">&times;</label>
+                    <label for="modal-ojos-2" class="btn-close">&times;</label>
                     <h4>Escanéa el codigo o haz clic abajo</h4>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20ENCRESPADOR%20por%20100%20L" 
-                        alt="QR WhatsApp" 
-                        class="qr-img">
-                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20ENCRESPADOR%20por%20100%20L" 
-                        target="_blank" 
-                        class="btn-wa"
-                    > Comprar por WhatsApp</a>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20ENCRESPADOR%20por%2060%20L"
+                         alt="QR WhatsApp" class="qr-img">
+                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20ENCRESPADOR%20por%2060%20L"
+                       target="_blank" class="btn-wa">Comprar por WhatsApp</a>
                 </div>
             </div>
         </section>
+
         <aside class="as-horario">
             <h2>Métodos De Pago </h2>
-                <ul>
-                    <li> Efectivo</li>
-                    <li> Transferencia </li>
-                    <li> Banco Atlantida</li>
-                    <li> Bac </li>
-                    <li> Lafise </li>
-                </ul>
+            <ul class="ul-horario">
+                <li> Efectivo</li>
+                <li> Transferencia </li>
+                <li> Banco Atlantida</li>
+                <li> Bac </li>
+                <li> Lafise </li>
+            </ul>
         </aside>
     </main>
+
     <footer class="foot-redes">
         <div class="div-redes">
             <h3> Síguenos en Nuestras Redes</h3>
             <ul>
-                <a href="https://www.instagram.com/easy_makeupstore/"> <img src="../assets/ODF.webp" alt="jj"></a>
+                <a href="https://www.instagram.com/easy_makeupstore/"><img src="../assets/ODF.webp" alt="Instagram"></a>
                 <span> @easy_makeupStore </span>
                 <a href=""><img src="../assets/ODF3.png" alt=""></a>
                 <samp> Ana Gabriela | 99-99-99-99</samp>

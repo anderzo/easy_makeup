@@ -9,118 +9,167 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="../index.html"><img src="../assets/imag/logo.jpeg" alt="" width="100" height="100"></a>
+            <a href="../index.html"><img src="../assets/imag/logo.jpeg" alt="Logo" width="100" height="100"></a>
         </div>
         <div class="info">
-            <h1>HERRAMIENTAS PARA TU CUIDAD</h1>
+            <h1>HERRAMIENTAS PARA TU CUIDADO</h1>
             <div class="contacto">
                 <span> Entregas de lunes a viernes en UNAH-CU. Contactanos: 99-99-99-99 @Ana_Gabriela</span>
             </div>
         </div>
+         
     </header>
+
     <nav class="nav">
         <div class="logo"> Categorías </div>
         <input type="checkbox" id="toggle" aria-label="Abrir menú">
         <label for="toggle" class="burger">
-        <span></span><span></span><span></span>
+            <span></span><span></span><span></span>
         </label>
-        <ul class="menu" >
+        <ul class="menu">
             <li><a href="../index.html"><strong> Inicio</strong></a></li>
-            <li><a href="../pages/rostro.html"> <strong> Rostro </strong></a></li>                
-            <li><a href="../pages/labios.html"> <strong> Labios </strong></a></li>
-            <li><a href="../pages/ojos.html"> <strong> Ojos </strong></a></li>
-            <li><a href="##"> <strong> Cremas </strong></a></li>
-            <li> <a href="##"> <strong> Proveedores </strong></a></li>
+            <li><a href="../pages/rostro.html"><strong> Rostro </strong></a></li>
+            <li><a href="../pages/labios.html"><strong> Labios </strong></a></li>
+            <li><a href="../pages/ojos.html"><strong> Ojos </strong></a></li>
+            <li><a href="##"><strong> Cremas </strong></a></li>
+            <li><a href="##"><strong> Proveedores </strong></a></li>
         </ul>
     </nav>
+
     <main class="main">
         <div class="descipccion">
-            <p>Brochas, esponjas y herramientas esenciales para una aplicacion profesional.</p>
+            <p>Brochas, esponjas y herramientas esenciales para una aplicacion profesional</p>
         </div>
+
         <section class="sect">
             <h3> Brochas </h3>
             <article class="art">
+                <label for="detalle-accesorios-1" class="card-click" aria-label="Ver detalles"></label>
                 <figure>
-                    <img src="../assets/accesorios/1.png" alt="" width="220" height="200">
+                    <img src="../assets/accesorios/1.png" alt="Set de brochas" width="220" height="200">
                     <figcaption> 5 Piezas </figcaption>
                 </figure>
-                <p> <strong>Precio: </strong> 150 L </p>
-                <p>No tienes brochas para tus sombras? </p>
+                <p><strong>Precio: </strong> 150 L</p>
+                <p>No tienes brochas para tus sombras?</p>
                 <p>Te traemos un set de 5 brochas para que puedas embellecer tu mirada</p>
-                <label for="modal-brochas-1" class="button-buy">Comprar</label>
+                <label for="modal-accesorios-1" class="button-buy btn-card">Comprar</label>
             </article>
-            <input type="checkbox" id="modal-brochas-1" class="modal-toggle">
+
+            <input type="checkbox" id="detalle-accesorios-1" class="modal-toggle">
+            <div class="modal modal-detalle">
+                <div class="modal-card">
+                    <label for="detalle-accesorios-1" class="btn-close">&times;</label>
+                    <img src="../assets/accesorios/1.png" alt="Set de brochas" width="160" height="160">
+                    <h4>Set de 5 Brochas</h4>
+                    <p><strong>Precio: </strong> 150 L</p>
+                    <p>
+                        Set de 5 piezas para aplicar y difuminar tus sombras con precisión,
+                        ideal para lograr una mirada definida y embellecida
+                    </p>
+                    <label for="modal-accesorios-1" class="button-buy">Comprar</label>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-accesorios-1" class="modal-toggle qr-toggle">
             <div class="modal">
                 <div class="modal-card">
-                    <label for="modal-brochas-1" class="btn-close">&times;</label>
+                    <label for="modal-accesorios-1" class="btn-close">&times;</label>
                     <h4>Escanéa el codigo o haz clic abajo</h4>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20Set%20de%205%20brochas%20por%20150%20L" 
-                        alt="QR WhatsApp" 
-                        class="qr-img">
-                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20Set%20de%205%20brochas%20por%20150%20L" 
-                        target="_blank" 
-                        class="btn-wa"
-                    > Comprar por WhatsApp</a>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20Set%20de%205%20brochas%20por%20150%20L"
+                         alt="QR WhatsApp" class="qr-img">
+                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20Set%20de%205%20brochas%20por%20150%20L"
+                       target="_blank" class="btn-wa">Comprar por WhatsApp</a>
                 </div>
             </div>
         </section>
+
         <section class="sect">
             <h3> StarFaces </h3>
             <article class="art">
+                <label for="detalle-accesorios-2" class="card-click" aria-label="Ver detalles"></label>
                 <figure>
-                    <img src="../assets/accesorios/2.png" alt="" width="220" height="300">
-                    <figcaption> Disponibles en: Amarillo, Negro, Azul , Rosa</figcaption>
+                    <img src="../assets/accesorios/2.png" alt="Starface patches" width="220" height="300">
+                    <figcaption> Disponibles en: Amarillo, Negro, Azul, Rosa </figcaption>
                 </figure>
-                <p> <strong>Precio: </strong> 380 L </p>
-                <p> Los famosos Pimple patches</p>
-                <p> Contienen ácido salicílico, disminuyen barros y espinillas en menos de 24 horas</p>
-                <label for="modal-brochas-2" class="button-buy">Comprar</label>
+                <p><strong>Precio: </strong> 380 L</p>
+                <p>Los famosos Pimple patches</p>
+                <p>Contienen ácido salicílico, disminuyen barros y espinillas en menos de 24 horas</p>
+                <label for="modal-accesorios-2" class="button-buy btn-card">Comprar</label>
             </article>
-            <input type="checkbox" id="modal-brochas-2" class="modal-toggle">
+
+            <input type="checkbox" id="detalle-accesorios-2" class="modal-toggle">
+            <div class="modal modal-detalle">
+                <div class="modal-card">
+                    <label for="detalle-accesorios-2" class="btn-close">&times;</label>
+                    <img src="../assets/accesorios/2.png" alt="Starface patches" width="160" height="160">
+                    <h4>StarFaces</h4>
+                    <p><strong>Precio: </strong> 380 L</p>
+                    <p>
+                        Los famosos pimple patches con ácido salicílico,
+                        ayudan a disminuir barros y espinillas en menos de 24 horas,
+                        disponibles en amarillo, negro, azul y rosa.
+                    </p>
+                    <label for="modal-accesorios-2" class="button-buy">Comprar</label>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-accesorios-2" class="modal-toggle qr-toggle">
             <div class="modal">
                 <div class="modal-card">
-                    <label for="modal-brochas-2" class="btn-close">&times;</label>
+                    <label for="modal-accesorios-2" class="btn-close">&times;</label>
                     <h4>Escanéa el codigo o haz clic abajo</h4>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20las%20STARFACES%20por%20380%20L" 
-                        alt="QR WhatsApp" 
-                        class="qr-img">
-                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20el%20Set%20de%20Patches%20por%20380%20L" 
-                        target="_blank" 
-                        class="btn-wa"
-                    > Comprar por WhatsApp</a>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20las%20STARFACES%20por%20380%20L"
+                         alt="QR WhatsApp" class="qr-img">
+                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20las%20STARFACES%20por%20380%20L"
+                       target="_blank" class="btn-wa">Comprar por WhatsApp</a>
                 </div>
             </div>
         </section>
-         <section class="sect">
+
+        <section class="sect">
             <h3> Starface Hydro-Star Patches + Acido Salicílico </h3>
             <article class="art">
+                <label for="detalle-accesorios-3" class="card-click" aria-label="Ver detalles"></label>
                 <figure>
-                    <img src="../assets/accesorios/3.png" alt="" width="220" height="200">
+                    <img src="../assets/accesorios/3.png" alt="Hydro-Star Patches" width="220" height="200">
                     <figcaption> 32 parches </figcaption>
                 </figure>
-                <p> <strong>Precio: </strong> 400 L </p>
-                <p> parches con empaque portátil, perfectos para viajes</p>
-                <label for="modal-brochas-3" class="button-buy">Comprar</label>
+                <p><strong>Precio: </strong> 400 L</p>
+                <p>Parches con empaque portátil, perfectos para viajes</p>
+                <label for="modal-accesorios-3" class="button-buy btn-card">Comprar</label>
             </article>
-            <input type="checkbox" id="modal-brochas-3" class="modal-toggle">
+
+            <input type="checkbox" id="detalle-accesorios-3" class="modal-toggle">
+            <div class="modal modal-detalle">
+                <div class="modal-card">
+                    <label for="detalle-accesorios-3" class="btn-close">&times;</label>
+                    <img src="../assets/accesorios/3.png" alt="Hydro-Star Patches" width="160" height="160">
+                    <h4>Starface Hydro-Star Patches</h4>
+                    <p><strong>Precio: </strong> 400 L</p>
+                    <p>
+                        32 parches con ácido salicílico en un empaque portátil,
+                        perfectos para llevar a todas partes y para tus viajes
+                    </p>
+                    <label for="modal-accesorios-3" class="button-buy">Comprar</label>
+                </div>
+            </div>
+
+            <input type="checkbox" id="modal-accesorios-3" class="modal-toggle qr-toggle">
             <div class="modal">
                 <div class="modal-card">
-                    <label for="modal-brochas-3" class="btn-close">&times;</label>
+                    <label for="modal-accesorios-3" class="btn-close">&times;</label>
                     <h4>Escanéa el codigo o haz clic abajo</h4>
-                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20los%20Hydro-Star%20Patches%20por%20400%20L" 
-                        alt="QR WhatsApp" 
-                        class="qr-img">
-                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20los%20Hydro-Star%20Patches%20por%20400%20L" 
-                        target="_blank" 
-                        class="btn-wa"
-                    > Comprar por WhatsApp</a>
+                    <img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20los%20Hydro-Star%20Patches%20por%20400%20L"
+                         alt="QR WhatsApp" class="qr-img">
+                    <a href="https://wa.me/50499787277?text=Hola,%20me%20interesa%20comprar%20los%20Hydro-Star%20Patches%20por%20400%20L"
+                       target="_blank" class="btn-wa">Comprar por WhatsApp</a>
                 </div>
             </div>
         </section>
-    </main>
-    <aside class="as-horario">
+
+        <aside class="as-horario">
             <h2>Métodos De Pago </h2>
-            <ul class="ul-horari">
+            <ul class="ul-horario">
                 <li> Efectivo</li>
                 <li> Transferencia </li>
                 <li> Banco Atlantida</li>
@@ -128,11 +177,13 @@
                 <li> Lafise </li>
             </ul>
         </aside>
+    </main>
+
     <footer class="foot-redes">
         <div class="div-redes">
             <h3> Síguenos en Nuestras Redes</h3>
             <ul>
-                <a href="https://www.instagram.com/easy_makeupstore/"> <img src="../assets/ODF.webp" alt="jj"></a>
+                <a href="https://www.instagram.com/easy_makeupstore/"><img src="../assets/ODF.webp" alt="Instagram"></a>
                 <span> @easy_makeupStore </span>
                 <a href=""><img src="../assets/ODF3.png" alt=""></a>
                 <samp> Ana Gabriela | 99-99-99-99</samp>

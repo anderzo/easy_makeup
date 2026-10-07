@@ -550,7 +550,7 @@ button:hover {
 }
 
 /* --- 4. ACTIVACIÓN DEL MODAL --- */
-.modal-toggle:checked ~ .modal {
+.modal-toggle:checked + .modal {
   opacity: 1 !important;
   pointer-events: auto !important;
 }
@@ -648,3 +648,44 @@ nav {
 }
 .menu a:hover,
 .menu a:focus-visible { background: var(--hover); color: var(--accent); }
+
+/* tarjeta clicable */
+.art { position: relative; }
+
+.card-click {
+    position: absolute;
+    inset: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+/* oculta el detalle mientras el QR esté abierto */
+.sect:has(.qr-toggle:checked) .modal-detalle {
+    display: none;
+}
+
+/* imagen del detalle */
+.modal-detalle .modal-card img {
+    max-width: 100%;
+    height: auto;
+}
+
+.btn-card {
+    position: relative;
+    z-index: 2;
+}
+
+.art {
+  border: 2px solid transparent;
+  cursor: pointer;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.art:hover {
+  border-color: #ff85a2;
+  box-shadow: 0 4px 14px rgba(255, 133, 162, 0.35);
+}
+
+.art:active {
+  border-color: #d63a6a;
+}

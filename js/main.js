@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   if (!track) return;
 
-  const TIEMPO_CAMBIO = 3000; // Tiempo en milisegundos (4000ms = 4 segundos)
+  const TIEMPO_CAMBIO = 4000; // Tiempo en milisegundos (4000ms = 4 segundos)
   let temporizador = null;
 
   // Función para avanzar a la siguiente diapositiva
